@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar stays on top */
+  }
+  
+  .slider-wrapper {
+    margin-top: 0px; /* Adjust this value based on the height of your navbar */
+  }
+  
+  .slider-container {
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  .slick-slide {
+    text-align: center;
+    color: #333;
+    background: #ffffff;
+    padding: 100px 0;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the slide area */
+    margin-bottom: 20px; /* Add margin if needed */
+    border-radius: 15px; /* Apply border-radius to make corners rounded */
+  }
+  
+  .slider-controls {
+    position: absolute; /* Position buttons absolutely within the container */
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .prev-button,
+  .next-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .prev-button img,
+  .next-button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Make the buttons circular */
+  }
+  
+  .prev-button:hover img,
+  .next-button:hover img {
+    filter: brightness(0.8);
+    -webkit-filter: brightness(0.8);
+  }
+  
+  .app-store-icon {
+    width: 120px; /* Adjust the size of the store icons */
+    height: auto;
+    border-radius: 15px; /* Apply border-radius to make corners rounded */
+  }
+  
+  .app-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between the store icons */
+    margin-top: 10px; /* Adjust the margin above the store icons */
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .search-input {
+      width: 100%; /* full width */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .search-input {
+      width: 50%; /* 50% width on larger screens */
+    }
+  }
+  

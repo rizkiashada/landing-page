@@ -1,19 +1,22 @@
-import React from "react";
-import "./index.css"; // Pastikan ini sesuai dengan file CSS utama Anda
-import NavbarComponent from "./components/NavbarComponent";
-import SliderComponent from "./components/SliderComponent";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import NavbarComponent from './components/NavbarComponent';
+import SliderComponent from './components/SliderComponent';
+import CardComponent from './components/CardComponent';
+import ContentComponent from './components/ContentComponent';
+import Card2Component from './components/Card2Component';
+import AboutComponent from './components/AboutComponent';
 
-const App = () => {
+function App() {
   return (
     <div className="App">
       <NavbarComponent />
-      <div className="slider-wrapper">
-        <SliderComponent />
-      </div>
+      <SliderComponent />
+      <CardComponent />
+      <ContentComponent />
+      <Card2Component />
+      <AboutComponent />
     </div>
   );
-};
+}
 
 export default App;

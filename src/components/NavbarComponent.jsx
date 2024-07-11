@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../index.css"; // Pastikan ini sesuai dengan file CSS utama Anda
+import "../index.css"; 
 import ButtonComponent from "./ButtonComponent";
 
 const NavbarComponent = () => {
